@@ -1,17 +1,17 @@
 import Image from "next/image";
 import React from "react";
 
-const Item = () => (
+interface ItemProps {
+  icon?: string;
+  value?: string;
+  label?: string;
+}
+
+const Item = ({ icon = "", value = "value", label = "label" }: ItemProps) => (
   <div className="inline-flex gap-[8px] tex-sm">
-    <Image
-      className="bg-black rounded-full"
-      alt="icon"
-      src={""}
-      width={14}
-      height={14}
-    />
-    <span className="font-bold">140</span>
-    <span>Project Selesai</span>
+    <Image className="res" alt="icon" src={icon} width={20} height={20} />
+    <span className="font-bold">{value}</span>
+    <span>{label}</span>
   </div>
 );
 
@@ -25,10 +25,18 @@ const CardBio = () => {
         width={80}
         height={80}
       />
-      <div className="flex flex-col">
-        <Item />
-        <Item />
-        <Item />
+      <div className="flex flex-col gap-2">
+        <Item
+          icon="/img/logo/shuttle.png"
+          value="140"
+          label="Project Selesai"
+        />
+        <Item
+          icon="/img/logo/github.png"
+          value="120"
+          label="Star di repo ini"
+        />
+        <Item icon="/img/logo/handshake.png" value="42" label="Client" />
       </div>
     </div>
   );
