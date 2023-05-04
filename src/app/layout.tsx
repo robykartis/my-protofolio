@@ -8,7 +8,7 @@ export const metadata = {
   description: "Saya roby seorang web full stack developer",
 };
 const gothic_A1 = Gothic_A1({
-  weight: ["400", "700"],
+  weight: ["600", "700"],
   preload: false,
 });
 
@@ -22,7 +22,7 @@ export default function RootLayout({
       <body>
         <div
           className={clsx(
-            "flex flex-row w-[1000px]  mx-auto mt-[151px]",
+            "flex flex-row w-[1000px]  mx-auto mt-[153px]",
             gothic_A1.className
           )}
         >
