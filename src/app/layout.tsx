@@ -4,8 +4,8 @@ import { Gothic_A1 } from "next/font/google";
 import clsx from "clsx";
 
 export const metadata = {
-  title: "Roby Karti S",
-  description: "Saya roby seorang web full stack developer",
+  title: "Roby Ajo",
+  description: "ini descri[tion",
 };
 const gothic_A1 = Gothic_A1({
   weight: ["600", "700"],
